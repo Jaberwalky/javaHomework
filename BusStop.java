@@ -30,6 +30,7 @@ public class BusStop {
     if (numberInQueue() > 0) {
       Person passenger = queue[0];
       bus.boardPassenger(passenger);
+      // need to find a way to move everyone down one rather than removing a different person from the array than is on the bus.
       queue[numberInQueue() -1] = null;
     }
   }
